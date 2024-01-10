@@ -1,0 +1,139 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 150vh;
+}
+
+#homeLink {
+   text-decoration: none;
+    color: #f0f0f0;
+}
+
+#aboutLink {
+   text-decoration: none;
+    color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logoImg {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex: 1;
+    min-height: 250vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 600px;
+    max-width: 400px;
+}
+
+#personalImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    position: relative;
+    top: 50px;
+    height: 245px;
+    width: 200px;
+}
+
+label[for="textBox"] {
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 255px;
+    left: 410px;
+    font-size: 35px;
+}
+
+#bigTextField {
+    width: 60%;
+    margin-left: 158px;
+    position: relative;
+    bottom: 255px;
+    left: 60px;
+    min-width: 700px;
+
+}
+
+h4 {
+    margin-top: 20px;
+    text-align: left;
+}
+
+label[for="nameField"],
+label[for="emailField"],
+label[for="messageField"],
+label[for="phoneField"] {
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+    top: 400px;
+    right: 600px;
+}
+
+input[type="text"] {
+    position: relative;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    min-width: 300px;
+    top: 400px;
+    right: 600px;
+}
+
+#messageField {
+    position: relative;
+    top: 400px;
+    right: 600px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#contact {
+    position: relative;
+    top: 365px;
+    right: 500px;
+    font-size: 35px;
+    color: red;
+}
+
+#sendButton {
+    background-color: #333;
+    width: 100px;
+    height: auto;
+    position: relative;
+
+    top: 400px;
+    right: 450px;
+}
