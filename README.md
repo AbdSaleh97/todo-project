@@ -1,5 +1,5 @@
 # todo-project
 
-![Home page Wireframe photo](./images/ToDoList-wireframe.jpgToDoList-wireframe.jpg)
+![Home page Wireframe photo](./images/ToDoList-wireframe.jpg)
 
-![About page wireframe](./images/AboutPage-wireframe.jpgAboutPage-wireframe.jpg)
+![About page wireframe](./images/AboutPage-wireframe.jpg)
