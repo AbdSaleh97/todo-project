@@ -20,33 +20,41 @@
 
     <main>
         <div id="container">
-            
-            <img src="https://th.bing.com/th/id/OIP.C-g5GHQWE4CAivPBWER55gHaLH?w=186&h=279&c=7&r=0&o=5&pid=1.7" alt="" id="personalImg">
-            <label for="textBox">Abdelrahman Saleh</label>
 
-            <textarea id="bigTextField" name="textBox" rows="230" cols="680" aria-valuetext="OverView About yourself" placeholder="Describtion"></textarea>
-           
+            <img src="https://th.bing.com/th/id/OIP.C-g5GHQWE4CAivPBWER55gHaLH?w=186&h=279&c=7&r=0&o=5&pid=1.7" alt=""
+                class="personalImg">
+            <div class="div">
+                <h1 class="nameTag">Abdelrahman Saleh</h1>
+                <textarea class="bigTextField" name="textBox" rows="15" cols="35"
+                    aria-valuetext="OverView About yourself" placeholder="Describtion"></textarea>
+            </div>
+
         </div>
 
-        <div>
+        <div class="infoBox">
             <h2 id="contact">Contact Me</h2>
             <h4><label for="nameField">Full Name</label>
-                <input type="text" id="nameField">
+                <div><input type="text" id="nameField"></div>
+
             </h4>
 
             <h4><label for="emailField">Email</label>
-                <input type="text" id="emailField">
+                <div><input type="text" id="emailField"></div>
             </h4>
 
             <h4><label for="phoneField">Phone</label>
-                <input type="text" id="phoneField">
+                <div> <input type="text" id="phoneField"></div>
+
             </h4>
 
             <h4><label for="messageField">Message</label>
-                <textarea id="messageField" rows="10" cols="50" aria-valuetext="Message" placeholder="Message" ></textarea>
+                <div><textarea id="messageField" rows="10" cols="50" aria-valuetext="Message"
+                        placeholder="Message"></textarea></div>
+
             </h4>
-            <input type="button" name="Send" id="sendButton" value="Send">
-          
+            <div> <input type="button" name="Send" id="sendButton" value="Send"></div>
+
+
         </div>
 
 

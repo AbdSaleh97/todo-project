@@ -1,17 +1,44 @@
 body {
     background-color: #f0f0f0;
     display: flex;
-    flex-direction: column;
-    min-height: 150vh;
+    flex-flow: column wrap;
+    /* min-height: 100vh; */
 }
 
 #homeLink {
-   text-decoration: none;
+    text-decoration: none;
     color: #f0f0f0;
 }
 
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 30px;
+    position: relative;
+
+    left: 80px;
+    top: 50px;
+
+}
+.div{
+    margin-left: 30px;
+}
+.personalImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+ }
+.bigTextField{
+    width: 300%;
+}
+.nameTag{
+    align-self: flex-start;
+}
+
 #aboutLink {
-   text-decoration: none;
+    text-decoration: none;
     color: #f0f0f0;
 }
 
@@ -39,79 +66,10 @@ main {
     justify-content: space-between;
     padding: 20px;
     flex: 1;
-    min-height: 250vh;
+
+    flex-flow: column wrap;
 }
 
-#container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-height: 600px;
-    max-width: 400px;
-}
-
-#personalImg {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    position: relative;
-    top: 50px;
-    height: 245px;
-    width: 200px;
-}
-
-label[for="textBox"] {
-    font-weight: bold;
-    margin-bottom: 10px;
-    position: relative;
-    bottom: 255px;
-    left: 410px;
-    font-size: 35px;
-}
-
-#bigTextField {
-    width: 60%;
-    margin-left: 158px;
-    position: relative;
-    bottom: 255px;
-    left: 60px;
-    min-width: 700px;
-
-}
-
-h4 {
-    margin-top: 20px;
-    text-align: left;
-}
-
-label[for="nameField"],
-label[for="emailField"],
-label[for="messageField"],
-label[for="phoneField"] {
-    position: relative;
-    display: block;
-    margin-bottom: 5px;
-    top: 400px;
-    right: 600px;
-}
-
-input[type="text"] {
-    position: relative;
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    min-width: 300px;
-    top: 400px;
-    right: 600px;
-}
-
-#messageField {
-    position: relative;
-    top: 400px;
-    right: 600px;
-}
 
 footer {
     background-color: #333;
@@ -120,20 +78,18 @@ footer {
     text-align: center;
 }
 
-#contact {
-    position: relative;
-    top: 365px;
-    right: 500px;
-    font-size: 35px;
-    color: red;
+
+.infoBox{
+   align-self: center;
+   justify-content: space-between;
 }
-
-#sendButton {
-    background-color: #333;
+label{
+    margin-bottom:  10px;
+    padding-bottom: 5px;
+}
+#sendButton{
     width: 100px;
-    height: auto;
-    position: relative;
-
-    top: 400px;
-    right: 450px;
+    height: 25px;
+    background-color: rgb(95, 95, 205);
+    margin-left: 135px;
 }
