@@ -1,10 +1,13 @@
 body {
-    min-height: 150vh;
+
+    min-height: 100vh;
     border: 2px double blue;
     border-width: 2px;
 }
-main{
-    min-height: 150vh;
+
+main {
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 #head {
@@ -38,9 +41,16 @@ main{
 }
 
 table {
-    width: 55%;
-    margin: 20px auto;
     border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
 }
 
 th,
@@ -49,48 +59,36 @@ td {
     text-align: center;
 }
 
-th {
-    background-color: #333;
-    color: #fff;
-}
-
-input[type="checkbox"] {
-    appearance: none;
-    width: 20px;
+.rectangle{
+    width: 60px;
     height: 20px;
-    border: 2px solid #333;
-    background-color: #fff;
-    cursor: pointer;
-}
-
-#ReviewLectures:checked {
-    background-color: green;
-}
-
-#Tasks:checked{
-   background-color: green;
-}
-
-#Groceries:checked {
-    background-color: green;
-}
-
-#ReviewLectures:hover {
+    display: inline-block;
     background-color: red;
 }
-
-#Tasks:hover{
-   background-color: red;
+/* .rectangle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00ff00;
+    opacity: 0;
+    pointer-events: none;
 }
 
-#Groceries:hover {
-    background-color: red;
-}
+input[type=checkbox]:checked + .rectangle::before{
+   opacity: 1;
 
-footer{
+  } */
+
+footer {
     margin-top: 20px;
     color: rgb(7, 13, 94);
     background-color: rgb(80, 78, 78);
     text-align: center;
     margin-top: auto;
 }
+#Tasks:checked ~ .rectangle{
+   background-color: #00ff00;
+ }
