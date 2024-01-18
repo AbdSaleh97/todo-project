@@ -1,42 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="./CssPages/about.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <img src="./download.jpg" alt="website Logo">
+        <nav id="navBar">
+            <img src="./images/download.jpg" alt="website Logo" id="logoImg">
 
-            <head>About Us</head>
-            <a href="./index.html">Home</a>
-            <a href="./About.html">About us</a>
+            <a href="./index.html" id="homeLink">Home</a>
+            <a href="./About.html" id="aboutLink">About us</a>
         </nav>
     </header>
 
     <main>
-        <div>
-            <img src="https://th.bing.com/th/id/OIP.C-g5GHQWE4CAivPBWER55gHaLH?w=186&h=279&c=7&r=0&o=5&pid=1.7" alt="">
-            <label for="textBox">Abdelrahman Saleh</label>
-            
-            <p>My name is Abdelrahman And i am working in this project to track my work via the to do list webiste </p>
+        <div id="container">
+
+            <img src="https://th.bing.com/th/id/OIP.C-g5GHQWE4CAivPBWER55gHaLH?w=186&h=279&c=7&r=0&o=5&pid=1.7" alt=""
+                class="personalImg">
+            <div class="div">
+                <h1 class="nameTag">Abdelrahman Saleh</h1>
+                <textarea class="bigTextField" name="textBox" rows="15" cols="35"
+                    aria-valuetext="OverView About yourself" placeholder="Describtion"></textarea>
+            </div>
+
         </div>
 
-    <div>
-        <h4><label for="nameField">Name</label>
-            <input type="text" id="nameField"></h4>
+        <div class="infoBox">
+            <h2 id="contact">Contact Me</h2>
+            <h4><label for="nameField">Full Name</label>
+                <div><input type="text" id="nameField"></div>
 
-        <h4><label for="emailField">Email</label>
-            <input type="text" id="emailField"></h4>
+            </h4>
 
-        <h4><label for="messageField">Message</label>
-            <input type="text" id="messageField"></h4>
-    </div>
+            <h4><label for="emailField">Email</label>
+                <div><input type="text" id="emailField"></div>
+            </h4>
 
-   
-        
+            <h4><label for="phoneField">Phone</label>
+                <div> <input type="text" id="phoneField"></div>
+
+            </h4>
+
+            <h4><label for="messageField">Message</label>
+                <div><textarea id="messageField" rows="10" cols="50" aria-valuetext="Message"
+                        placeholder="Message"></textarea></div>
+
+            </h4>
+            <div> <input type="button" name="Send" id="sendButton" value="Send"></div>
+
+
+        </div>
+
+
+
     </main>
 
     <footer>
@@ -46,4 +68,5 @@
         <p>Copy Rights are reserved for prep-course students</p>
     </footer>
 </body>
+
 </html>

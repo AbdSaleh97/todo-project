@@ -1,0 +1,95 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-flow: column wrap;
+    /* min-height: 100vh; */
+}
+
+#homeLink {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 30px;
+    position: relative;
+
+    left: 80px;
+    top: 50px;
+
+}
+.div{
+    margin-left: 30px;
+}
+.personalImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+ }
+.bigTextField{
+    width: 300%;
+}
+.nameTag{
+    align-self: flex-start;
+}
+
+#aboutLink {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logoImg {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex: 1;
+
+    flex-flow: column wrap;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.infoBox{
+   align-self: center;
+   justify-content: space-between;
+}
+label{
+    margin-bottom:  10px;
+    padding-bottom: 5px;
+}
+#sendButton{
+    width: 100px;
+    height: 25px;
+    background-color: rgb(95, 95, 205);
+    margin-left: 135px;
+}

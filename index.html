@@ -5,56 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO Do List</title>
+    <link rel="stylesheet" href="./CssPages/style.css">
 </head>
 
 <body>
 <script src="./app.js"></script>
     <header>
-        <nav>
-            <img src="./download.jpg" alt="website Logo">
-
-            <head>To Do List</head>
-            <a href="./index.html">Home</a>
-            <a href="./About.html">About us</a>
+        <nav id="navBar">
+            <img src="./images/download.jpg" alt="website Logo" id="logoImg">
+            <a href="./index.html" id="homeLink">Home</a>
+            <a href="./About.html" id="aboutLink">About us</a>
         </nav>
-    </header>
 
+        <h2 id="head">To Do List</h2>
+    </header>
+    <script src="./app.js"></script>
     <main>
-        <table border="1">
+        <table class="table">
+
             <thead>
                 <tr>
                     <th>Task</th>
-                    <th>Check Box</th>
-
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Groceries</td>
-                    <td> <input type="checkbox" id="Groceries" name="Groceries"></td>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Lab and Tasks</td>
-                    <td> <input type="checkbox"></td>
-
-                </tr>
-                <tr>
-                    <td>Review Lectures</td>
-                    <td><input type="checkbox"></td>
+                    <td>Groceries <input type="checkbox" id="Groceries"></td>
+                    <td>
+                        <div class="rectangle"></div>
                     </td>
 
                 </tr>
-                <!-- Add more rows as needed -->
+                <tr>
+                    <td>Lab and Tasks <input type="checkbox" id="Tasks"></td>
+                    <td>
+                        <div class="rectangle"></div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Review Lectures <input type="checkbox" id="ReviewLectures"></td>
+                    <td>
+                        <div class="rectangle"></div>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </main>
 
-
-
     <footer>
-        <label>Contact us</label>
-        <label for="">Location</label>
+        <label id="contactLabel">Contact us</label>
+        <label id="locationLabel">Location</label>
         <p>Copy Rights are reserved for prep-course students</p>
     </footer>
 </body>
