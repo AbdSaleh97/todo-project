@@ -1,4 +1,5 @@
-todo-js2
+"use strict";
+
 let userName = prompt("Enter your name", "Name");
 
 let userAge = prompt("Enter your Age", "Age");
