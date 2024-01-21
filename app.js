@@ -39,7 +39,12 @@ let q2 = prompt("IS the moon full?");
 let q3 = prompt("DO you like full moons?");
 
 quesChecker();
-let tempArr = arrValues();
+
+let tempArr = [];
+tempArr.push(q1);
+tempArr.push(q2);
+tempArr.push(q3);
+
 printArr(tempArr);
 
 function quesChecker() {
@@ -52,14 +57,6 @@ function quesChecker() {
     if (q3 === null || q3.trim() === "") {
         q3 = "Invalid";
     }
-}
-
-function arrValues() {
-    let arr = [];
-    arr[0] = q1;
-    arr[1] = q2;
-    arr[2] = q3;
-    return arr;
 }
 
 function printArr(tempArr)
