@@ -1,40 +1,4 @@
-"use strict";
-
-let userName = prompt("Enter your name", "Name");
-
-let userAge = prompt("Enter your Age", "Age");
-
-agePrompt(userAge);
-
-let userGender = prompt("Enter your Gender", "Gender");
-
-let conf = confirm("Do you want ot skip welcomig message?");
-
-confirmPrompt(conf);
-
-function agePrompt(userAge) {
-    if (userAge <= 0) {
-        alert("Please enter a proper Age")
-    }
-}
-
-function confirmPrompt(conf) {
-    if (!conf) {
-        if (userGender == "female") {
-            alert("Hello Ms " + userName);
-
-        }
-        else if (userGender == "male") {
-            alert("Hello Mr " + userName);
-
-        }
-        else {
-
-            alert("Hello " + userName);
-
-        }
-    }
-}
+'use strict';
 
 let q1 = prompt("Is it night now?", "Yes/No?");
 let q2 = prompt("IS the moon full?");
