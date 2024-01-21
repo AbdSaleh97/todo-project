@@ -1,3 +1,4 @@
+todo-js2
 let userName = prompt("Enter your name", "Name");
 
 let userAge = prompt("Enter your Age", "Age");
@@ -65,13 +66,3 @@ function printArr(tempArr)
         console.log(tempArr[index]); 
     }
 }
-
-
-
-
-
-
-
-
-
-
