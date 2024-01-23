@@ -1,5 +1,3 @@
-'use strict';
-
 let q1 = prompt("Is it night now?");
 let q2 = prompt("IS the moon full?");
 let q3 = prompt("DO you like full moons?");
